@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">MOC Magic Card List</string>
     <string name="load_cards">Load Cards</string>
-    <string name="load_error_msg">An error occured. Please try again later.</string>
+    <string name="load_error_msg">An error occurred. Please try again later.</string>
 </resources>

@@ -7,9 +7,7 @@ import androidx.loader.app.LoaderManager;
 import androidx.loader.content.AsyncTaskLoader;
 import androidx.loader.content.Loader;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,7 +20,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URL;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -144,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 getData();
             }
 
-            List<MagicCard> cardList = new LinkedList<MagicCard>();
+            List<MagicCard> cardList = new LinkedList<>();
 
             for(int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonElement = jsonArray.getJSONObject(i);
